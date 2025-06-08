@@ -1,0 +1,118 @@
+/* Import Fantasy Font */
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap');
+
+/* General Styling */
+body {
+    font-family: 'Uncial Antiqua', cursive; /* Enchanted medieval-style font */
+    background: linear-gradient(to bottom, #0C0F1A, #243E66); /* Deep twilight fading into Greek blue */
+    color: #E5D1FA; /* Soft fae silver-lavender */
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: rgba(35, 12, 52, 0.9); /* Rich mystical violet with opacity */
+    padding: 20px;
+    box-shadow: 0px 0px 20px #7A4EBA; /* Faint purple glow */
+}
+
+h1 {
+    color: #BFA638; /* Ancient gold accents */
+    font-size: 2.8em;
+    text-shadow: 2px 2px 15px #7A4EBA, 0px 0px 8px #243E66; /* Dual blue-purple glow */
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #BFA638; /* Gold glow */
+    font-size: 1.3em;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Glowing Effect on Hover */
+nav ul li a:hover {
+    color: #E5D1FA; /* Lavender fae glow */
+    text-shadow: 0px 0px 12px #E5D1FA;
+}
+/* About Me Image Styling */
+.about-me img {
+    width: 250px; /* Adjust size */
+    height: auto; /* Keep proportions */
+    border-radius: 12px; /* Soft rounded edges */
+    box-shadow: 0px 0px 15px #7A4EBA; /* Mystical violet glow */
+    border: 4px solid #BFA638; /* Elegant gold fantasy border */
+    
+    /* Animation */
+    opacity: 0; /* Start invisible */
+    transform: scale(0.9); /* Start slightly smaller */
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Hover Effect */
+.about-me img:hover {
+    transform: scale(1.05); /* Slight zoom */
+    box-shadow: 0px 0px 20px #C9A147; /* Golden glow effect */
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/* Section Styling */
+section {
+    margin: 40px 0;
+    background: rgba(24, 10, 40, 0.85); /* Deep fae purple mist */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px #7A4EBA; /* Ethereal purple glow */
+}
+
+/* Book Section */
+.book img {
+    width: 160px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px #243E66; /* Subtle Greek blue glow */
+}
+
+h2 {
+    color: #BFA638; /* Ancient gold */
+}
+
+/* Footer */
+footer {
+    background-color: rgba(35, 12, 52, 0.9); /* Mystical violet */
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0px 0px 15px #243E66; /* Faint enchanted glow */
+}
+
+/* Enchanted Background Effect */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('fae-mist-pattern.png') repeat;
+    opacity: 0.12; /* Faint mystical mist overlay */
+    z-index: -1;
+}
